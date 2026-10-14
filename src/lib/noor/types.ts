@@ -27,7 +27,7 @@ export interface ChoiceActivity {
   correctId: string;
   /** explanation shown after check; `wrong` keyed by choice id falls back to `wrongDefault` */
   explainCorrect: Text;
-  explainWrong: Partial<Record<string, Text>>;
+  explainWrong: Text;
   concept: Text;
 }
 
