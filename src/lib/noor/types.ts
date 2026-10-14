@@ -22,7 +22,7 @@ export interface ChoiceActivity {
   kind: "choice";
   id: string;
   prompt: Text;
-  scenario?: Text;
+  scenario?: Text | undefined;
   choices: Choice[];
   correctId: string;
   /** explanation shown after check; `wrong` keyed by choice id falls back to `wrongDefault` */
